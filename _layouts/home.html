@@ -1,0 +1,18 @@
+---
+layout: basic
+---
+  <body>
+    
+    <h1>{{ page.title }}</h1>
+    
+    <section>
+      {{ content }}
+    </section>
+    
+    <section>
+		<a>O mais recente post é </a> <a href="{{ site.posts.first.url | relative_url }}""{{ site.posts.first.url | relative_url }}">este.</a> <a>Segue a </a> <a href="/blog/">lista de posts.</a>
+    </section>
+    
+    
+  </body>
+</html>

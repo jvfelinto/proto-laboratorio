@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\[', right: '\\]', display: true},
+            {left: '\\(', right: '\\)', display: false}
+			]
+			});">
+		</script>
+	
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+    
+	<style>
+		:root {
+			--f: 16px;
+		}
+		
+		body {
+			z-index: -100;
+			margin: 77px;
+			font-family: Cambria, sans-serif;
+			font-size: var(--f);
+		}
+		
+		nav {
+			align-items: center;
+			max-width: 50vw;
+			margin: 0 auto;
+		}
+		
+		footer {
+			position: fixed;
+			bottom: 77px;
+			right: 77px;
+			color: gray;
+		}
+		
+		grad {
+			z-index: -10;
+			background-image: linear-gradient(white, #EEEEEE);
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			height: 100vh;
+			width: 100vw;
+		}
+		
+	</style>
+  </head>
+  
+  <body>
+
+    <section>
+      {{ content }}
+    </section>
+    
+    <grad></grad>
+    
+	<footer>@bobbest - <a href="/">home</a></footer>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+---
+layout: basic
+---
+<head><style>
+	div {
+		margin-bottom: 6px;
+	}
+</style></head>
+
+<h1>{{ page.title }}</h1>
+
+{% for post in site.posts %}
+	<div class="post-item">
+		<a href="{{ post.url | relative_url }}">{{ post.title }}</a> ->
+		<time>{{ post.date | date: "%d-%m-%Y" }}</time>
+	</div>
+{% endfor %}
