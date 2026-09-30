@@ -19,8 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Proto Laboratório Blog
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/proto-laboratorio"
+url: "https://jvfelinto.github.io"
 
 # Build settings
 plugins:
