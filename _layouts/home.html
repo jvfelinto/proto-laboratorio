@@ -1,6 +1,17 @@
 ---
 layout: basic
 ---
+  <head>
+  <style>
+    hr  {
+      border: none;
+      border-top: 2px solid gray;
+      margin: 2rem 0;
+      margin-top: 10px;
+    }
+  </style>
+  </head>
+
   <body>
     
     <h1>{{ page.title }}</h1>
@@ -10,9 +21,17 @@ layout: basic
     </section>
     
     <section>
-		<a>O mais recente post é </a> <a href="{{ site.posts.first.url | relative_url }}">este.</a> <a>Segue a </a> <a href="{{ '/blog/' | relative_url }}">lista de posts.</a>
+		<a>O mais recente post é </a> <a href="{{ site.posts.first.url | relative_url }}">este.</a> <a>Segue a lista de posts.</a>
     </section>
     
+    <hr>
+
+    {% for post in site.posts %}
+	    <div class="post-item">
+		    <a href="{{ post.url | relative_url }}">{{ post.title }}</a> ->
+		    <time>{{ post.date | date: "%d-%m-%Y" }}</time>
+	    </div>
+    {% endfor %}
     
   </body>
 </html>

@@ -22,7 +22,7 @@
     
 	<style>
 		:root {
-			--f: 16px;
+			--f: 18px;
 		}
 		
 		body {
@@ -47,14 +47,30 @@
 		
 		grad {
 			z-index: -10;
-			background-image: linear-gradient(white, #EEEEEE);
+			background-image: linear-gradient(white, #CCCCCC);
 			position: fixed;
 			top: 0px;
 			left: 0px;
 			height: 100vh;
 			width: 100vw;
 		}
-		
+    
+    code {
+      color: #666666;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      :root {
+        --f: 14px;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      :root {
+        --f: 12px;
+      }
+    }
+
 	</style>
   </head>
   

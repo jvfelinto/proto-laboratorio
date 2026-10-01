@@ -21,6 +21,7 @@
 title: Proto Laboratório Blog
 baseurl: "/proto-laboratorio"
 url: "https://jvfelinto.github.io"
+permalink: /:title/
 
 # Build settings
 plugins:
